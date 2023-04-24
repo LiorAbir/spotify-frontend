@@ -1,0 +1,105 @@
+.main-nav {
+	grid-area: nav-bar;
+	background-color: $background-solid;
+	justify-content: space-between;
+	position: relative;
+	transition: 0.2s;
+
+	span {
+		text-overflow: ellipsis;
+	}
+
+	.main-nav-container {
+		padding-top: 24px;
+		flex-direction: column;
+		width: 100%;
+
+		.logo {
+			padding: 0 24px;
+			margin-bottom: 18px;
+
+			svg {
+				height: 40px;
+				max-width: 131px;
+				width: 100%;
+			}
+		}
+
+		.nav-main-list {
+			a {
+				align-items: center;
+				// cursor: pointer;
+				gap: 16px;
+				height: 40px;
+				padding: 0 24px;
+			}
+
+			.link-icon {
+				filter: $svg-white;
+			}
+		}
+	}
+
+	.second-nav-container {
+		flex-direction: column;
+		margin-top: 24px;
+
+		.create-playlist,
+		.liked-songs {
+			padding: 8px 24px;
+		}
+
+		.container {
+			width: 24px;
+			height: 24px;
+			padding: 4px;
+			margin-right: 16px;
+			border-radius: 2px;
+
+			&.plus {
+				background-color: $text-base;
+			}
+
+			&.heart {
+				background: linear-gradient(135deg, #450af5, #c4efd9);
+				.link-icon {
+					filter: $svg-white;
+				}
+			}
+		}
+
+		hr {
+			background-color: #282828;
+			border: none;
+			height: 1px;
+			margin: 8px 24px 0 24px;
+			min-height: 1px;
+		}
+
+		.playlist-list {
+			padding: 8px 0;
+
+			.playlist-item {
+				height: 30px;
+				padding: 8px 24px;
+			}
+		}
+	}
+
+	.layout-resizer {
+		cursor: col-resize;
+		// background-color: lightblue;
+		background: linear-gradient(hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 100%, 0.3))
+			no-repeat 50%/1px 100%;
+		position: absolute;
+		height: 100%;
+		// inset-inline-end: -4.5px;
+		right: -4.5px;
+		width: 9px;
+
+		label {
+			// background-color: lightcoral;
+			// height: 100%;
+		}
+	}
+}

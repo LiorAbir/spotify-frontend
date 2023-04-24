@@ -1,0 +1,12 @@
+.playing-bar {
+	grid-area: playing-bar;
+
+	background-color: #181818;
+	border-top: 1px solid #282828;
+	width: 100%;
+	z-index: 5;
+	height: 90px;
+	.playing-bar-container {
+		padding: 0 16px;
+	}
+}
