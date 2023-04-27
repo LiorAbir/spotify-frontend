@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 //CMPS
 import { MainPage } from './views/MainPage'
 import { TopBar } from './cmps/TopBar'
+import { MainNav } from './cmps/MainNav'
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<div className="app">
 				<div className="main-app grig main-layout">
 					<TopBar />
+					<MainNav />
 					<Routes>
 						<Route path="/" element={<MainPage />}></Route>
 					</Routes>
