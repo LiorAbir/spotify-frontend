@@ -1,4 +1,12 @@
 .main-layout {
+	height: 100vh;
+	background-color: @background-base;
+	grid-template-areas:
+		'top-bar         top-bar         top-bar'
+		'nav-bar         main-view       right-sidebar'
+		'playing-bar playing-bar playing-bar';
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr auto;
 }
 
 .card-grig {
