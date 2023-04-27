@@ -4,12 +4,14 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 
 //CMPS
 import { MainPage } from './views/MainPage'
+import { TopBar } from './cmps/TopBar'
 
 function App() {
 	return (
 		<Router>
 			<div className="app">
 				<div className="main-app grig main-layout">
+					<TopBar />
 					<Routes>
 						<Route path="/" element={<MainPage />}></Route>
 					</Routes>
