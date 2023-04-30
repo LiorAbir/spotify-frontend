@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 // import { router } from './router'
-
+import { youtubeService } from './services/youtube.service'
 //CMPS
 import { MainPage } from './views/MainPage'
 import { TopBar } from './cmps/TopBar'
