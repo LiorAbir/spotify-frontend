@@ -5,7 +5,44 @@
 	width: 100%;
 	z-index: 5;
 	height: 90px;
+
 	.playing-bar-container {
 		padding: 0 16px;
+		height: 100%;
+		align-items: center;
+		justify-content: space-between;
+
+		.track-details {
+			align-items: center;
+			gap: 1rem;
+
+			.empty-heart-svg {
+				filter: @svg-light-grey;
+				&:hover {
+					filter: @svg-white;
+				}
+			}
+		}
+
+		.player-control {
+			.player-btns {
+			}
+
+			.playback-bar {
+				.progress-bar {
+					.app-progress-bar();
+				}
+			}
+		}
+
+		.audio-settings {
+			.progress-bar {
+				.app-progress-bar();
+			}
+		}
 	}
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+	background-color: white;
 }

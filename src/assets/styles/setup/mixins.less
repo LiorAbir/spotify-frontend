@@ -29,3 +29,31 @@
 // 		@content;
 // 	}
 // }
+
+.app-progress-bar {
+	height: 4px;
+	appearance: none;
+	width: 100%;
+	margin: 2px;
+	border-radius: 8px;
+	transition: 0.2s ease;
+	background-color: #5e5e5e;
+
+	&:hover {
+		background: green;
+		appearance: none;
+
+		&::-webkit-slider-thumb {
+			color: white;
+		}
+	}
+
+	&::-webkit-slider-thumb {
+		appearance: none;
+		color: #ffffff00;
+	}
+}
+
+input[type='range']::-webkit-slider-thumb {
+	background-color: #ffffff00;
+}
