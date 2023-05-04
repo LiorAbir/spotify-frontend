@@ -1,12 +1,38 @@
+// .main-layout {
+// 	height: 100vh;
+// 	background-color: @background-base;
+// 	grid-template-areas:
+// 		'top-bar         top-bar         top-bar'
+// 		'nav-bar         main-view       right-sidebar'
+// 		'playing-bar playing-bar playing-bar';
+// 	grid-template-columns: auto 1fr;
+// 	grid-template-rows: auto 1fr auto;
+// }
 .main-layout {
-	height: 100vh;
 	background-color: @background-base;
+	height: 100vh;
 	grid-template-areas:
-		'top-bar         top-bar         top-bar'
+		'nav-bar         top-bar         top-bar'
 		'nav-bar         main-view       right-sidebar'
 		'playing-bar playing-bar playing-bar';
 	grid-template-columns: auto 1fr;
 	grid-template-rows: auto 1fr auto;
+
+	.top-bar {
+		grid-area: top-bar;
+	}
+
+	.main-nav {
+		grid-area: nav-bar;
+	}
+
+	.playing-bar {
+		grid-area: playing-bar;
+	}
+
+	.main-content {
+		grid-area: main-view, right-sidebar;
+	}
 }
 
 .card-grig {

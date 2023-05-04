@@ -10,20 +10,18 @@ import { PlayingBar } from './cmps/PlayingBar'
 
 function App() {
 	return (
-		<Router>
-			<div className="app">
-				<div className="main-app grid main-layout">
-					<TopBar />
-					<MainNav />
-					<PlayingBar />
-					<main className="main-content">
-						<Routes>
-							<Route path="/" element={<MainPage />}></Route>
-						</Routes>
-					</main>
-				</div>
+		<div className="app">
+			<div className="main-app grid main-layout">
+				<TopBar />
+				<MainNav />
+				<PlayingBar />
+				<main className="main-content">
+					<Routes>
+						<Route path="/" element={<MainPage />}></Route>
+					</Routes>
+				</main>
 			</div>
-		</Router>
+		</div>
 	)
 }
 
